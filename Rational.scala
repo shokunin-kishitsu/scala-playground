@@ -59,3 +59,8 @@ println(r1 + r2 * r2)
 
 println(new Rational(5))
 println(new Rational(66, 42))
+
+implicit def intToRational(x: Int) = new Rational(x)
+
+println(r2 * 5)
+println(5 * r2)
