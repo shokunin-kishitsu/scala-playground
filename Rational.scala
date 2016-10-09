@@ -9,11 +9,15 @@ class Rational(n: Int, d: Int) {
 
 	override def toString = s"$numerator/$denominator"
 
-	def add(that: Rational):Rational = {
+	def + (that: Rational): Rational = {
 		new Rational(
 			numerator * that.denominator + denominator * that.numerator,
 			denominator * that.denominator
 		)
+	}
+
+	def * (that: Rational): Rational = {
+		new Rational(numerator * that.numerator, denominator * that.denominator)
 	}
 
 	private def gcd(a: Int, b: Int): Int = {
@@ -27,7 +31,8 @@ println(r1)
 val r2 = new Rational(44, 467)
 println(r2)
 
-println(r1 add r2)
+println(r1 + r2)
+println(r1 * r2)
 
 println(new Rational(5))
 println(new Rational(66, 42))
