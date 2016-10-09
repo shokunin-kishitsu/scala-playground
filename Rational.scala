@@ -3,6 +3,8 @@ class Rational(n: Int, d: Int) {
 	val numerator: Int = n
 	val denominator: Int = d
 
+	def this(n: Int) = this(n, 1)
+
 	override def toString = s"$n/$d"
 
 	def add(that: Rational):Rational = {
@@ -20,3 +22,6 @@ val r2 = new Rational(44, 467)
 println(r2)
 
 println(r1 add r2)
+
+val r3 = new Rational(5)
+println(r3)
