@@ -19,4 +19,4 @@ println(r1)
 val r2 = new Rational(44, 467)
 println(r2)
 
-println(r1.add(r2))
+println(r1 add r2)
