@@ -13,3 +13,15 @@ def grep(pattern: String) =
 	} println(file + " : " + trimmed)
 
 grep(".*gcd.*")
+
+// line lengths
+val forLineLengths =
+	for {
+		file <- filesHere
+		if file.getName.endsWith(".scala")
+		line <- fileLines(file)
+		trimmed = line.trim
+		if trimmed.matches(".*for.*")
+	} yield trimmed.length
+
+println(forLineLengths.toList)
