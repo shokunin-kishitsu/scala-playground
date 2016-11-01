@@ -7,3 +7,7 @@ for (i <- 1 to 200)
 
 for (i <- 1 until 200)
 	println("Iteration: " + i)
+
+for (file <- filesHere)
+	if (file.getName.endsWith(".scala"))
+		println(file)
