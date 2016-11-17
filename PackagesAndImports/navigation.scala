@@ -1,10 +1,10 @@
 package bobsrockets {
-	package navigation {
-		class Navigator
+	class Ship
+}
 
-		package tests {
-			class NavigatorSuite
-		}
+package bobsrockets.fleets {
+	class Fleet {
+		def addShip() = { new Ship }
 	}
 }
 
