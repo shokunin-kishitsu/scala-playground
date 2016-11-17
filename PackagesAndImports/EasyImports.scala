@@ -4,7 +4,7 @@ class UsingFruit extends Fruit("mango", "tango") {
 	def print = {
 		println(this.name)
 
-		import bobsdelights.Fruits._
+		import bobsdelights.Fruits.{Apple => _, _}
 
 		println(Pear)
 	}
