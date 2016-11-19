@@ -1,4 +1,3 @@
-package printmenu
 import bobsdelights.Fruits
 import bobsdelights.showFruit
 
