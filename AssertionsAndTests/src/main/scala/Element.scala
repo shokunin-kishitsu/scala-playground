@@ -9,6 +9,8 @@ object Element {
 	}
 
 	private class UniformElement(ch: Char, override val width: Int, override val height: Int) extends Element {
+		if (width < 0) throw new IllegalArgumentException("width cannot be negative")
+
 		private val line = ch.toString * width
 		def contents = Array.fill(height)(line)
 	}
