@@ -13,3 +13,12 @@ println(op)
 println(op.right == Var("x"))
 
 println(op.copy(operator = "-"))
+
+def simplifyTop(expr: Expr): Expr = expr match {
+	case UnOp("-", UnOp("-", e)) => e
+	case BinOp("+", e, Number(0)) => e
+	case BinOp("*", e, Number(1)) => e
+	case _ => expr
+}
+
+println(simplifyTop(UnOp("-", UnOp("-", Var("x")))))
