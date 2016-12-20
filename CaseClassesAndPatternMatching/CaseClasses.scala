@@ -27,3 +27,9 @@ def describe(e: Expr): String = (e: @unchecked) match {
 	case Number(_) => "a number"
 	case Var(_) => "a variable"
 }
+
+val exp = BinOp("*", Number(5), Number(1))
+val BinOp(op2, left, right) = exp
+println(op2)
+println(left)
+println(right)
