@@ -10,3 +10,6 @@ def show(x: Option[String]) = x match {
 
 println(show(capitals get "Japan"))
 println(show(capitals get "North Pole"))
+
+for ((country, city) <- capitals)
+	println("The capital of " + country + " is " + city)
