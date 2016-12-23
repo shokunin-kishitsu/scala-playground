@@ -6,7 +6,7 @@ val withDefault: Option[Int] => Int = {
 println(withDefault(Some(10)))
 println(withDefault(None))
 
-val second: List[Int] => Int = {
+val second: PartialFunction[List[Int], Int] = {
 	case x :: y :: _ => y
 }
 
