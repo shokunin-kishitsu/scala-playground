@@ -10,5 +10,5 @@ val second: PartialFunction[List[Int], Int] = {
 	case x :: y :: _ => y
 }
 
-println(second(List(4, 5, 6)))
-println(second(List(2)))
+println(second.isDefinedAt(List(4, 5, 6)))
+println(second.isDefinedAt(List(2)))
