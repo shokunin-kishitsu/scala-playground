@@ -7,3 +7,4 @@ val diag3: List[List[Int]] =
     List(0, 0, 1)
   )
 val empty: List[Nothing] = List()
+val xs: List[String] = List()
