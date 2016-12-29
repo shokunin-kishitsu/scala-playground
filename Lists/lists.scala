@@ -38,3 +38,17 @@ val aa :: bb :: rest = nums
 println(aa)
 println(bb)
 println(rest)
+
+// insertion sorting using pattern matching
+def isort2(xs: List[Int]): List[Int] = xs match {
+  case List()   => List()
+  case x :: xs1 => insert2(x, isort2(xs1))
+}
+
+def insert2(x: Int, xs: List[Int]): List[Int] = xs match {
+  case List()   => List(x)
+  case y :: ys  =>  if (x <= y) x :: xs
+                    else y :: insert2(x, ys)
+}
+
+println(isort2(List(5, 6, 2, 8, 3, 1, 0)))
