@@ -52,3 +52,6 @@ def insert2(x: Int, xs: List[Int]): List[Int] = xs match {
 }
 
 println(isort2(List(5, 6, 2, 8, 3, 1, 0)))
+
+// concatenation, returns List[Any]
+println(List(1, 2, 3) ::: List("apples", "oranges"))
