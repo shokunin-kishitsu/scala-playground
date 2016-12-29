@@ -10,8 +10,8 @@ val empty: List[Nothing] = List()
 val xs: List[String] = List()
 
 // alternative way to construct lists
-val fruit2 = "apples" :: ("oranges" :: ("pears" :: Nil))
-val nums2 = 1 :: (2 :: (3 :: (4 :: Nil)))
+val fruit2 = "apples" :: "oranges" :: "pears" :: Nil
+val nums2 = 1 :: 2 :: 3 :: 4 :: Nil
 val diag3_2 = (1 :: (0 :: (0 :: Nil))) ::
               (0 :: (1 :: (0 :: Nil))) ::
               (0 :: (0 :: (1 :: Nil))) :: Nil
