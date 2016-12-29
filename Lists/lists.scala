@@ -55,3 +55,9 @@ println(isort2(List(5, 6, 2, 8, 3, 1, 0)))
 
 // concatenation, returns List[Any]
 println(List(1, 2, 3) ::: List("apples", "oranges"))
+
+// an implementation of manual concatenation
+def append[T](xs: List[T], ys: List[T]): List[T] = xs match {
+  case List() =>    ???
+  case x :: xs1 =>  ???
+}
