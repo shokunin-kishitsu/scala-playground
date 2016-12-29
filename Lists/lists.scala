@@ -28,3 +28,13 @@ def insert(x: Int, xs: List[Int]): List[Int] =
 
 
 println(isort(List(5, 6, 2, 8, 3, 1, 0)))
+
+val List(a, b, c) = fruit
+println(a)
+println(b)
+println(c)
+
+val aa :: bb :: rest = nums
+println(aa)
+println(bb)
+println(rest)
