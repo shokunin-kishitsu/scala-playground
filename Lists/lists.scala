@@ -104,3 +104,7 @@ println(abcde zip List(1, 2, 3))
 
 // unzip
 println(abcde.zipWithIndex.unzip)
+
+// toString
+println(abcde.getClass)
+println(abcde.toString.getClass)
