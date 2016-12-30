@@ -83,3 +83,8 @@ println(abcde.reverse.reverse == abcde)
 println(abcde take 3)
 println(abcde drop 2)
 println(abcde splitAt 3)
+
+// apply and indices
+println(abcde apply 2)
+println(abcde(2))
+println(abcde.indices)
