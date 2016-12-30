@@ -88,3 +88,11 @@ println(abcde splitAt 3)
 println(abcde apply 2)
 println(abcde(2))
 println(abcde.indices)
+
+// flatten
+val (left, right) = abcde.splitAt(2)
+val splitList = List(left, right)
+println(splitList)
+println(splitList.flatten)
+
+println(fruit.map(_.toCharArray).flatten)
