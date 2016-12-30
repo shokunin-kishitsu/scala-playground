@@ -96,3 +96,6 @@ println(splitList)
 println(splitList.flatten)
 
 println(fruit.map(_.toCharArray).flatten)
+
+// zip
+println(abcde.indices zip abcde)
