@@ -78,3 +78,8 @@ val abcde = List('a', 'b', 'c', 'd', 'e')
 println(abcde)
 println(abcde.reverse)
 println(abcde.reverse.reverse == abcde)
+
+// take, drop, and splitAt
+println(abcde take 3)
+println(abcde drop 2)
+println(abcde splitAt 3)
