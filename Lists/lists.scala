@@ -72,3 +72,8 @@ println(nums.head)
 println(nums.last)
 println(nums.tail)
 println(nums.init)
+
+// reverse
+val abcde = List('a', 'b', 'c', 'd', 'e')
+println(abcde)
+println(abcde.reverse)
