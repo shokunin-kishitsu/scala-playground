@@ -65,3 +65,10 @@ def append[T](xs: List[T], ys: List[T]): List[T] = xs match {
 val newList = append(List(1, 2, 3), List("mangoes", "bananas"))
 println(newList)
 println(newList.length)
+
+// head, tail, last, init
+println(nums)
+println(nums.head)
+println(nums.last)
+println(nums.tail)
+println(nums.init)
