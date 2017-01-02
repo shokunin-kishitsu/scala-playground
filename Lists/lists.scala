@@ -124,3 +124,8 @@ arr.toList
 val arr2 = new Array[Int](10)
 List(1, 2, 3) copyToArray (arr2, 3)
 arr2
+
+// iterator
+val it = abcde.iterator
+it.next
+it.next
