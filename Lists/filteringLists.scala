@@ -5,3 +5,5 @@ List.range(1, 6) find (_ % 2 == 0)
 List(1, 2, 3, -4, 5) takeWhile (_ > 0)
 val words = List("the", "quick", "brown", "fox")
 words dropWhile (_ startsWith "t")
+
+List(1, 2, 3, -4, 5) span (_ > 0)
