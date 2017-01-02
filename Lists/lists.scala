@@ -119,3 +119,8 @@ abcde addString (buf, "(", ";", ")")
 // toArray and toList
 val arr = abcde.toArray
 arr.toList
+
+// copyToArray
+val arr2 = new Array[Int](10)
+List(1, 2, 3) copyToArray (arr2, 3)
+arr2
