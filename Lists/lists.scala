@@ -109,4 +109,9 @@ println(abcde.zipWithIndex.unzip)
 println(abcde.getClass)
 println(abcde.toString.getClass)
 
-// testing new git plugin
+println(abcde.mkString(","))
+println(abcde.mkString("[", " : ", "]"))
+
+// StringBuilder
+val buf = new StringBuilder
+abcde addString (buf, "(", ";", ")")
