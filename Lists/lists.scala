@@ -115,3 +115,7 @@ println(abcde.mkString("[", " : ", "]"))
 // StringBuilder
 val buf = new StringBuilder
 abcde addString (buf, "(", ";", ")")
+
+// toArray and toList
+val arr = abcde.toArray
+arr.toList
