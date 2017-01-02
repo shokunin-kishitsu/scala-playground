@@ -129,3 +129,8 @@ arr2
 val it = abcde.iterator
 it.next
 it.next
+
+// using forall and exists
+def hasZeroRow(m: List[List[Int]]) =
+	m exists (row => row forall (_ == 0))
+hasZeroRow(diag3)
