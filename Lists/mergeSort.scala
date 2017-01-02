@@ -17,3 +17,6 @@ def msort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {
 }
 
 msort((x: Int, y: Int) => x < y)(List(5, 3, 7, 1, 8))
+
+val intSort = msort((x: Int, y: Int) => x < y) _
+intSort(List(9, 8, 7, 5, 4, 3, 2, 1))
