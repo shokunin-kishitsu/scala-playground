@@ -8,3 +8,7 @@ words flatMap (_.toList)
 
 List.range(1, 5) flatMap(i => List.range(1, i) map (j => (i, j)))
 for (i <- List.range(1, 5); j <- List.range(1, i)) yield (i, j)
+
+var sum = 0
+List.range(1, 6) foreach (sum += _)
+sum
