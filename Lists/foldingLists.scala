@@ -4,3 +4,6 @@ def product(xs: List[Int]): Int = (1 /: xs)(_ * _)
 
 sum(simpleList)
 product(simpleList)
+
+val fox = List("the", "quick", "brown", "fox")
+(fox.head /: fox.tail)(_ + " " + _)
