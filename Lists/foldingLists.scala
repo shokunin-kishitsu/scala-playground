@@ -7,3 +7,7 @@ product(simpleList)
 
 val fox = List("the", "quick", "brown", "fox")
 (fox.head /: fox.tail)(_ + " " + _)
+
+def reverseLeft[T](xs: List[T]) =
+	(List[T]() /: xs){(ys, y) => y :: ys}
+reverseLeft(fox)
