@@ -134,3 +134,6 @@ it.next
 def hasZeroRow(m: List[List[Int]]) =
 	m exists (row => row forall (_ == 0))
 hasZeroRow(diag3)
+
+// sortWith
+List(1, -3, 3, 6, 7, 2, -7, 2, -6, -12, 4, 32) sortWith (_ > _)
