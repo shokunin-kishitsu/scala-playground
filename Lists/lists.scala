@@ -146,3 +146,8 @@ List.apply(1, 2, 3)
 // range
 List.range(1, 9, 2)
 List.range(9, 1, -3)
+
+// fill
+List.fill(5)('a')
+List.fill(3)("hello")
+List.fill(6, 6)("666")
