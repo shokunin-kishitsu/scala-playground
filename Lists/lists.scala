@@ -142,3 +142,7 @@ List(1, -3, 3, 6, 7, 2, -7, 2, -6, -12, 4, 32) sortWith (_ > _)
 
 // apply
 List.apply(1, 2, 3)
+
+// range
+List.range(1, 9, 2)
+List.range(9, 1, -3)
