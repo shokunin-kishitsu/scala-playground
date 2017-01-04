@@ -151,3 +151,7 @@ List.range(9, 1, -3)
 List.fill(5)('a')
 List.fill(3)("hello")
 List.fill(6, 6)("666")
+
+// tabulate
+val squares = List.tabulate(5)(n => n * n)
+val multiplication = List.tabulate(5, 5)(_ * _)
