@@ -137,6 +137,7 @@ hasZeroRow(diag3)
 
 // sortWith
 List(1, -3, 3, 6, 7, 2, -7, 2, -6, -12, 4, 32) sortWith (_ > _)
+List(1, -3, 3, 6, 7, 2, -7, 2, -6, -12, 4, 32) sortWith ((x:Int, y:Int) => (x + y) % 2 == 0)
 
 // methods of the List object
 
