@@ -26,6 +26,12 @@ reverseSort(List(1, 2, 3, 4, 5, 6, 7, 8))
 
 msort[Int](_ > _)(List(5, 3, 7, 1, 8))
 
+
+// This inference scheme suggests the following library design principle:
+// When designing a polymorphic method that takes some non-function arguments
+// and a function argument, place the function argument last in a curried parameter
+// list on its own.
+
 def msortSwapped[T](xs: List[T])(less: (T, T) => Boolean): List[T] = {
 	def merge(xs: List[T], ys: List[T]): List[T] =
 		(xs, ys) match {
