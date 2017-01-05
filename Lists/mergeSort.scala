@@ -23,3 +23,5 @@ intSort(List(9, 8, 7, 5, 4, 3, 2, 1))
 
 val reverseSort = msort((x: Int, y: Int) => x > y) _
 reverseSort(List(1, 2, 3, 4, 5, 6, 7, 8))
+
+msort[Int](_ > _)(List(5, 3, 7, 1, 8))
