@@ -41,3 +41,13 @@ mums.keys
 mums.keySet
 mums.values
 mums.isEmpty
+
+// TreeSet
+import scala.collection.immutable.TreeSet
+val ts = TreeSet(9, 3, 1, 8, 0, 2, 7, 4, 6, 5)
+val cs = TreeSet('f', 'u', 'n')
+
+// TreeMap
+import scala.collection.immutable.TreeMap
+val tm = TreeMap(3 -> 'x', 1 -> 'x', 4 -> 'x')
+tm + (2 -> 'x')
