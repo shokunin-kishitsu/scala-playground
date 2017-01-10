@@ -28,3 +28,16 @@ map("hello") = 1
 map("there") = 2
 map
 map("hello")
+
+val mums = Map("i" -> 1, "ii" -> 2)
+mums + ("vi" -> 6)
+mums - "ii"
+mums ++ List("iii" -> 3, "v" -> 5)
+mums -- List("i", "ii")
+mums.size
+mums.contains("ii")
+mums("ii")
+mums.keys
+mums.keySet
+mums.values
+mums.isEmpty
