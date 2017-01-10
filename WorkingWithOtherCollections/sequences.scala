@@ -27,3 +27,8 @@ aBuf += 15
 aBuf
 aBuf.length
 aBuf(0)
+
+// implicit conversion of a String to StringOps
+def hasUpperCase(s: String) = s.exists(_.isUpper)
+hasUpperCase("Robert Frost")
+hasUpperCase("e e cummings")
