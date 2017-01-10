@@ -49,5 +49,6 @@ val cs = TreeSet('f', 'u', 'n')
 
 // TreeMap
 import scala.collection.immutable.TreeMap
-val tm = TreeMap(3 -> 'x', 1 -> 'x', 4 -> 'x')
-tm + (2 -> 'x')
+var tm = TreeMap(3 -> 'x', 1 -> 'x', 4 -> 'x')
+tm += (2 -> 'x')
+tm
