@@ -1,5 +1,6 @@
 import scala.collection.mutable
 
+// sets
 val mutaSet = mutable.Set(1, 2, 3)
 
 val text = "See Spot run. Run, Spot. Run!"
@@ -20,3 +21,6 @@ nums.contains(3)
 
 words.clear
 words
+
+// maps
+val map = mutable.Map.empty[String, Int]
