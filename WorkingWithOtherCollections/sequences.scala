@@ -1,4 +1,4 @@
-import scala.collection.mutable.ListBuffer
+import scala.collection.mutable.{ListBuffer, ArrayBuffer}
 
 // lists
 val colors = List("red", "blue", "green")
@@ -19,3 +19,11 @@ buf += 2
 
 3 +=: buf
 buf.toList
+
+// array buffers
+val aBuf = new ArrayBuffer[Int]()
+aBuf += 12
+aBuf += 15
+aBuf
+aBuf.length
+aBuf(0)
