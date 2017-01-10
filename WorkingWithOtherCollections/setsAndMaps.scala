@@ -24,3 +24,7 @@ words
 
 // maps
 val map = mutable.Map.empty[String, Int]
+map("hello") = 1
+map("there") = 2
+map
+map("hello")
