@@ -52,3 +52,7 @@ import scala.collection.immutable.TreeMap
 var tm = TreeMap(3 -> 'x', 1 -> 'x', 4 -> 'x')
 tm += (2 -> 'x')
 tm
+
+// initialization tricks
+val colors = List("blue", "yellow", "red", "green")
+val treeSet = TreeSet[String]() ++ colors
