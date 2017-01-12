@@ -56,3 +56,6 @@ tm
 // initialization tricks
 val colors = List("blue", "yellow", "red", "green")
 val treeSet = TreeSet[String]() ++ colors
+
+treeSet.toList
+treeSet.toArray
