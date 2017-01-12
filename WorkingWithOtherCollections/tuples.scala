@@ -12,3 +12,7 @@ def longestWord(words: Array[String]) = {
 val longest = longestWord("The quick brown fox".split(" "))
 longest._1
 longest._2
+
+val (word, idx) = longest
+word
+idx
