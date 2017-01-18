@@ -28,3 +28,6 @@ object Queue {
 			new QueueImpl(leading, x :: trailing)
 	}
 }
+
+// def doesNotCompile(q: Queue) = {}
+def doesCompile(q: Queue[AnyRef]) = {}
