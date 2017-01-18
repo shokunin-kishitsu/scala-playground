@@ -1,4 +1,4 @@
-class Queue[T](
+class Queue[T] private (
 	private val leading: List[T],
 	private val trailing: List[T]) {
 	private def mirror =
