@@ -15,6 +15,8 @@ class Queue[T] private (
 	}
 
 	def enqueue(x: T) = new Queue(leading, x :: trailing)
+}
 
-	def this() = this(Nil, Nil)
+object Queue {
+	def apply[T](xs: T*) = new Queue[T](xs.toList, Nil)
 }
