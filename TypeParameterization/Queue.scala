@@ -1,4 +1,4 @@
-trait Queue[-T] {
+trait Queue[T] {
 	def head: T
 	def tail: Queue[T]
 	def enqueue(x: T): Queue[T]
@@ -31,3 +31,13 @@ object Queue {
 
 // def doesNotCompile(q: Queue) = {}
 def doesCompile(q: Queue[AnyRef]) = {}
+
+class StrangeIntQueue extends Queue[Int] {
+	override def enqueue(x: Int) = {
+		println(math.sqrt(x))
+		super.enqueue(x)
+	}
+}
+
+val x: Queue[Any] = new StrangeIntQueue
+x.enqueue("abc")
